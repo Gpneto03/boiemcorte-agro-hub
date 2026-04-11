@@ -29,11 +29,11 @@ const Index = () => {
       </header>
 
       {/* SLOGAN BAR */}
-      <div className="bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 py-3 px-4 text-center border-b border-border/50">
-        <p className="text-xs md:text-sm font-display font-semibold text-foreground tracking-wide">
+      <div className="bg-gradient-to-r from-foreground via-foreground/95 to-foreground py-4 md:py-5 px-4 text-center border-b border-primary/30">
+        <p className="text-sm md:text-base font-display font-bold text-primary tracking-[0.15em]">
           Pecuária na prática, com gestão e resultado.
         </p>
-        <p className="text-[10px] md:text-xs text-muted-foreground font-light mt-0.5">
+        <p className="text-[11px] md:text-xs text-background/50 font-light mt-1 tracking-wider">
           Produza melhor, reduza custos e tome decisões mais inteligentes no campo.
         </p>
       </div>
