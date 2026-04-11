@@ -38,6 +38,7 @@ const Index = () => {
           </p>
         </div>
         <div className="h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
+      </header>
 
       {/* HERO — ABOVE THE FOLD */}
       <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden">
