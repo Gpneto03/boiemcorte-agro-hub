@@ -59,9 +59,9 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
             {/* Left — Copy */}
             <div className="flex-1 space-y-4 md:space-y-6 animate-fade-up">
-              <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1.5">
-                <AlertTriangle className="w-3.5 h-3.5 text-primary" />
-                <span className="text-xs md:text-sm font-display font-semibold text-primary-foreground/90 tracking-wider">
+              <div className="inline-flex items-center gap-2 bg-yellow-500/20 border border-yellow-500/40 rounded-full px-5 py-2">
+                <AlertTriangle className="w-4 h-4 md:w-5 md:h-5 text-yellow-400" />
+                <span className="text-sm md:text-base font-display font-bold text-yellow-400 tracking-wider">
                   ATENÇÃO PRODUTOR
                 </span>
               </div>
