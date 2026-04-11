@@ -21,22 +21,23 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* HEADER */}
       <header className="relative z-20 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="max-w-6xl mx-auto flex items-center justify-center gap-3 py-3 px-4">
-          <img src={logo} alt="Boi em Corte" className="w-10 h-10 md:w-12 md:h-12" />
-          <span className="text-xl md:text-2xl font-display font-bold tracking-wider">BOI EM CORTE</span>
+        <div className="max-w-6xl mx-auto flex flex-col items-center gap-2 py-4 md:py-5 px-4">
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Boi em Corte" className="w-10 h-10 md:w-12 md:h-12" />
+            <span className="text-xl md:text-2xl font-display font-bold tracking-[0.2em]">BOI EM CORTE</span>
+          </div>
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className="hidden md:block w-8 h-[1px] bg-gradient-to-r from-transparent to-primary" />
+            <p className="text-[11px] md:text-[13px] font-display font-medium text-primary tracking-[0.25em]">
+              PECUÁRIA NA PRÁTICA, COM GESTÃO E RESULTADO
+            </p>
+            <div className="hidden md:block w-8 h-[1px] bg-gradient-to-l from-transparent to-primary" />
+          </div>
+          <p className="text-[10px] md:text-[11px] text-muted-foreground/70 font-light tracking-wide">
+            Produza melhor, reduza custos e tome decisões mais inteligentes no campo.
+          </p>
         </div>
         <div className="h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
-      </header>
-
-      {/* SLOGAN BAR */}
-      <div className="bg-gradient-to-r from-foreground via-foreground/95 to-foreground py-4 md:py-5 px-4 text-center border-b border-primary/30">
-        <p className="text-sm md:text-base font-display font-bold text-primary tracking-[0.15em]">
-          Pecuária na prática, com gestão e resultado.
-        </p>
-        <p className="text-[11px] md:text-xs text-background/50 font-light mt-1 tracking-wider">
-          Produza melhor, reduza custos e tome decisões mais inteligentes no campo.
-        </p>
-      </div>
 
       {/* HERO — ABOVE THE FOLD */}
       <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden">
