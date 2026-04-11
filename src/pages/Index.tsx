@@ -1,5 +1,6 @@
 import logo from "@/assets/logo-boi-em-corte.png";
 import heroBg from "@/assets/hero-bg.jpg";
+import { TrendingDown, Sprout, BarChart3, CheckCircle2, AlertTriangle } from "lucide-react";
 
 const MORINGA_URL = "https://boiemcorte.com.br/moringa";
 const TIKTOK_URL = "https://www.tiktok.com/@boi_em_corte";
@@ -50,7 +51,6 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/85 to-foreground/60" />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-transparent to-foreground/40" />
-          {/* Green accent gradient at bottom */}
           <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary/20 to-transparent" />
         </div>
 
@@ -59,9 +59,10 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
             {/* Left — Copy */}
             <div className="flex-1 space-y-4 md:space-y-6 animate-fade-up">
-              <div className="inline-block bg-primary/20 border border-primary/30 rounded-full px-4 py-1">
+              <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1.5">
+                <AlertTriangle className="w-3.5 h-3.5 text-primary" />
                 <span className="text-xs md:text-sm font-display font-semibold text-primary-foreground/90 tracking-wider">
-                  ⚠️ ATENÇÃO PRODUTOR
+                  ATENÇÃO PRODUTOR
                 </span>
               </div>
 
@@ -83,7 +84,7 @@ const Index = () => {
               </div>
 
               <div className="flex items-center gap-3 pt-1">
-                <span className="text-lg md:text-xl">👉</span>
+                <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0" />
                 <p className="text-base md:text-lg font-display font-bold text-primary tracking-wide">
                   E o custo baixo é a melhor notícia!
                 </p>
@@ -135,17 +136,19 @@ const Index = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
-              { icon: "💰", title: "Redução de custo", desc: "Diminua a dependência de insumos externos e proteja sua margem de lucro." },
-              { icon: "🌱", title: "Autonomia na fazenda", desc: "Produza parte da alimentação do rebanho dentro da sua própria propriedade." },
-              { icon: "📊", title: "Gestão inteligente", desc: "Tome decisões baseadas em dados e resultados reais do campo." },
-              { icon: "✅", title: "Resultado comprovado", desc: "Estratégias testadas e validadas por produtores que já aplicam no dia a dia." },
+              { icon: TrendingDown, title: "Redução de custo", desc: "Diminua a dependência de insumos externos e proteja sua margem de lucro." },
+              { icon: Sprout, title: "Autonomia na fazenda", desc: "Produza parte da alimentação do rebanho dentro da sua própria propriedade." },
+              { icon: BarChart3, title: "Gestão inteligente", desc: "Tome decisões baseadas em dados e resultados reais do campo." },
+              { icon: CheckCircle2, title: "Resultado comprovado", desc: "Estratégias testadas e validadas por produtores que já aplicam no dia a dia." },
             ].map((item) => (
               <div
                 key={item.title}
                 className="group relative border border-border rounded-2xl p-5 md:p-6 space-y-3 bg-background hover:border-primary/50 transition-all duration-300 overflow-hidden"
               >
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <span className="text-2xl">{item.icon}</span>
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
                 <h3 className="text-base md:text-lg font-display font-bold">{item.title}</h3>
                 <p className="text-sm text-muted-foreground font-light leading-relaxed">{item.desc}</p>
               </div>
@@ -158,7 +161,6 @@ const Index = () => {
       <section className="py-16 md:py-24 px-4 md:px-6 bg-gradient-to-b from-background to-secondary/30">
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-foreground text-background rounded-2xl p-8 md:p-14 text-center space-y-6 overflow-hidden">
-            {/* Gradient accents */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-primary/60 to-primary" />
             <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
             <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
