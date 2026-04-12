@@ -36,39 +36,38 @@ const Moringa = () => {
       </header>
 
       {/* HERO */}
-      <section className="relative py-16 md:py-24 px-4 md:px-6 bg-foreground overflow-hidden">
-        <div className="absolute -top-20 -right-20 w-72 h-72 bg-primary/15 rounded-full blur-3xl" />
-        <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/8 rounded-full blur-3xl" />
+      <section className="py-16 md:py-24 px-4 md:px-6 bg-gradient-to-b from-background to-secondary/40">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative bg-foreground text-background rounded-2xl p-8 md:p-14 overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-primary/60 to-primary" />
+            <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
+            <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
 
-        <div className="relative max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
-            <div className="flex-1 space-y-5 animate-fade-up">
-              <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1.5">
-                <BookOpen className="w-4 h-4 text-primary" />
-                <span className="text-xs md:text-sm font-display font-bold text-primary tracking-wider">
-                  GUIA COMPLETO
-                </span>
+            <div className="relative flex flex-col lg:flex-row items-center gap-8">
+              <div className="flex-1 space-y-5 text-center lg:text-left animate-fade-up">
+                <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1.5">
+                  <BookOpen className="w-4 h-4 text-primary" />
+                  <span className="text-xs md:text-sm font-display font-bold text-primary tracking-wider">
+                    GUIA COMPLETO
+                  </span>
+                </div>
+
+                <h1 className="text-2xl md:text-4xl lg:text-[2.75rem] font-bold leading-[1.1] text-primary-foreground">
+                  O guia prático completo para implantar e usar moringa e{" "}
+                  <span className="text-primary">reduzir em até 70% o custo com proteína</span>{" "}
+                  da dieta animal
+                </h1>
+
+                <p className="text-sm md:text-base text-background/70 font-light leading-relaxed">
+                  Sem depender de insumos caros que consomem o seu lucro.
+                </p>
+
+                <CTAButton>QUERO MEU GUIA AGORA</CTAButton>
               </div>
-
-              <h1 className="text-2xl md:text-4xl lg:text-[2.75rem] font-bold leading-[1.1] text-primary-foreground">
-                O guia prático completo para implantar e usar moringa e{" "}
-                <span className="text-primary">reduzir em até 70% o custo com proteína</span>{" "}
-                da dieta animal
-              </h1>
-
-              <p className="text-sm md:text-base text-primary-foreground/70 font-light leading-relaxed">
-                Sem depender de insumos caros que consomem o seu lucro.
-              </p>
-
-              <CTAButton>QUERO MEU GUIA AGORA</CTAButton>
-            </div>
-
-            <div className="flex-shrink-0 w-64 md:w-80 animate-fade-up-delay-1 animate-pulse-subtle">
               <img
                 src={ebookCover}
                 alt="Guia Prático do Uso da Moringa na Pecuária Brasileira"
-                className="w-full drop-shadow-2xl"
+                className="w-40 md:w-52 drop-shadow-2xl flex-shrink-0 animate-pulse-subtle"
               />
             </div>
           </div>
