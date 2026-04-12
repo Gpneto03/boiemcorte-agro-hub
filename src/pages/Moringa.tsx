@@ -85,7 +85,7 @@ const Moringa = () => {
           ].map((item) => (
             <div
               key={item.number}
-              className="border border-border rounded-2xl p-5 md:p-6 text-center space-y-2 hover:border-primary/50 transition-colors bg-background"
+              className="border-gradient rounded-2xl p-5 md:p-6 text-center space-y-2 hover:brightness-110 transition-all bg-background"
             >
               <span className="text-3xl md:text-4xl font-display font-bold text-primary">
                 {item.number}
@@ -139,7 +139,7 @@ const Moringa = () => {
             ].map((item) => (
               <div
                 key={item.title}
-                className="group relative border border-border rounded-2xl p-5 md:p-6 space-y-3 bg-background hover:border-primary/50 transition-all duration-300 overflow-hidden"
+                className="group relative border-gradient rounded-2xl p-5 md:p-6 space-y-3 bg-background hover:brightness-110 transition-all duration-300 overflow-hidden"
               >
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -177,7 +177,7 @@ const Moringa = () => {
               "Resultados reais de produtores que já aplicam",
               "Planejamento para escalar a produção",
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-border hover:border-primary/30 transition-colors bg-background">
+              <div key={i} className="flex items-start gap-3 p-4 rounded-xl border-gradient hover:brightness-110 transition-all bg-background">
                 <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm md:text-base font-light">{item}</span>
               </div>

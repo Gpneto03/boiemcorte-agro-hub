@@ -73,6 +73,11 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
   }
+
+  .border-gradient {
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(135deg, hsl(0 0% 15%), hsl(145 72% 40%)) 1;
+  }
 }
 
 @keyframes fade-up {
