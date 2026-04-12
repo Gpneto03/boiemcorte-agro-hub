@@ -36,28 +36,28 @@ const Moringa = () => {
       </header>
 
       {/* HERO */}
-      <section className="relative py-16 md:py-24 px-4 md:px-6 bg-gradient-to-br from-secondary via-background to-secondary/60 overflow-hidden">
-        <div className="absolute -top-20 -right-20 w-72 h-72 bg-primary/8 rounded-full blur-3xl" />
-        <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-primary/8 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
+      <section className="relative py-16 md:py-24 px-4 md:px-6 bg-gradient-to-br from-foreground/90 via-foreground/70 to-foreground/50 overflow-hidden">
+        <div className="absolute -top-20 -right-20 w-72 h-72 bg-primary/15 rounded-full blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/8 rounded-full blur-3xl" />
 
         <div className="relative max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="flex-1 space-y-5 animate-fade-up">
-              <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5">
+              <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1.5">
                 <BookOpen className="w-4 h-4 text-primary" />
                 <span className="text-xs md:text-sm font-display font-bold text-primary tracking-wider">
                   GUIA COMPLETO
                 </span>
               </div>
 
-              <h1 className="text-2xl md:text-4xl lg:text-[2.75rem] font-bold leading-[1.1]">
+              <h1 className="text-2xl md:text-4xl lg:text-[2.75rem] font-bold leading-[1.1] text-primary-foreground">
                 O guia prático completo para implantar e usar moringa e{" "}
                 <span className="text-primary">reduzir em até 70% o custo com proteína</span>{" "}
                 da dieta animal
               </h1>
 
-              <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed">
+              <p className="text-sm md:text-base text-primary-foreground/70 font-light leading-relaxed">
                 Sem depender de insumos caros que consomem o seu lucro.
               </p>
 
