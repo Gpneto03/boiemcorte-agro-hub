@@ -36,7 +36,7 @@ const Moringa = () => {
       </header>
 
       {/* HERO */}
-      <section className="relative py-8 md:py-10 px-4 md:px-6 bg-foreground overflow-hidden">
+      <section className="relative py-5 md:py-7 px-4 md:px-6 bg-foreground overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-foreground via-foreground to-foreground/90" />
         <div className="absolute -top-32 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-primary/8 rounded-full blur-3xl" />
@@ -63,12 +63,12 @@ const Moringa = () => {
                 Sem depender de insumos caros que consomem o seu lucro.
               </p>
 
-              <CTAButton>QUERO MEU GUIA AGORA</CTAButton>
+              <CTAButton className="text-base md:text-lg px-10 py-4 md:px-14 md:py-5 animate-pulse-strong">QUERO MEU GUIA AGORA</CTAButton>
             </div>
             <img
               src={ebookCover}
               alt="Guia Prático do Uso da Moringa na Pecuária Brasileira"
-              className="w-56 md:w-72 lg:w-80 drop-shadow-2xl flex-shrink-0 animate-pulse-subtle"
+              className="w-56 md:w-72 lg:w-80 drop-shadow-2xl flex-shrink-0 animate-pulse-strong"
             />
           </div>
         </div>
@@ -226,7 +226,7 @@ const Moringa = () => {
             Voltar para a página principal
           </Link>
           <p className="text-sm text-muted-foreground/60 font-display tracking-widest">
-            PECUÁRIA SEM RODEIO
+            PECUÁRIA NA PRÁTICA
           </p>
         </div>
       </footer>
