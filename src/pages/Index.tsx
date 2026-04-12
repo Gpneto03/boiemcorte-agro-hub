@@ -2,7 +2,7 @@ import logo from "@/assets/logo-boi-em-corte.png";
 import heroBg from "@/assets/hero-bg.jpg";
 import { TrendingDown, Sprout, BarChart3, CheckCircle2, AlertTriangle } from "lucide-react";
 
-const MORINGA_URL = "https://boiemcorte.com.br/moringa";
+const MORINGA_URL = "/moringa";
 const TIKTOK_URL = "https://www.tiktok.com/@boi_em_corte";
 
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
