@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo-boi-em-corte.png";
 import heroBg from "@/assets/hero-bg.jpg";
 import { TrendingDown, Sprout, BarChart3, CheckCircle2, AlertTriangle } from "lucide-react";
@@ -6,14 +7,12 @@ const MORINGA_URL = "/moringa";
 const TIKTOK_URL = "https://www.tiktok.com/@boi_em_corte";
 
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <a
-    href={MORINGA_URL}
-    target="_blank"
-    rel="noopener noreferrer"
+  <Link
+    to={MORINGA_URL}
     className={`inline-block text-display font-bold text-sm md:text-base tracking-wider bg-primary text-primary-foreground px-8 py-3 md:px-12 md:py-4 rounded-full hover:brightness-110 transition-all duration-300 hover:scale-[1.02] shadow-[0_4px_20px_hsl(145_60%_36%/0.4)] ${className}`}
   >
     {children}
-  </a>
+  </Link>
 );
 
 const Index = () => {
