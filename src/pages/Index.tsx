@@ -28,12 +28,12 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-2 md:gap-3">
             <div className="hidden md:block w-8 h-[1px] bg-gradient-to-r from-transparent to-primary" />
-            <p className="text-sm md:text-base font-display font-medium text-primary tracking-[0.25em]">
+            <p className="text-base md:text-lg font-display font-medium text-primary tracking-[0.25em]">
               PECUÁRIA NA PRÁTICA, COM GESTÃO E RESULTADO
             </p>
             <div className="hidden md:block w-8 h-[1px] bg-gradient-to-l from-transparent to-primary" />
           </div>
-          <p className="text-xs md:text-sm text-muted-foreground/70 font-light tracking-wide">
+          <p className="text-sm md:text-base text-foreground font-light tracking-wide">
             Produza melhor, reduza custos e tome decisões mais inteligentes no campo.
           </p>
         </div>
