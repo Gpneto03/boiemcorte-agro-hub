@@ -200,7 +200,7 @@ const Index = () => {
             </a>
           </div>
           <p className="text-sm text-muted-foreground/60 font-display tracking-widest">
-            PECUÁRIA SEM RODEIO
+            PECUÁRIA NA PRÁTICA
           </p>
         </div>
       </footer>

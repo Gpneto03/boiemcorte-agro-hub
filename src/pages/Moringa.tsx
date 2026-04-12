@@ -8,7 +8,7 @@ const CHECKOUT_URL = "https://pay.hotmart.com/C105350002W";
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
   <a
     href={CHECKOUT_URL}
-    className={`inline-block text-display font-bold text-sm md:text-base tracking-wider bg-primary text-primary-foreground px-8 py-3 md:px-12 md:py-4 rounded-full hover:brightness-110 transition-all duration-300 hover:scale-[1.02] shadow-[0_4px_20px_hsl(145_60%_36%/0.4)] animate-pulse-subtle ${className}`}
+    className={`inline-block text-display font-bold text-sm md:text-base tracking-wider bg-primary text-primary-foreground px-8 py-3 md:px-12 md:py-4 rounded-full hover:brightness-110 transition-all duration-300 hover:scale-[1.02] shadow-[0_4px_20px_hsl(145_60%_36%/0.4)] animate-pulse-strong ${className}`}
   >
     {children}
   </a>
