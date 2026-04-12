@@ -36,7 +36,7 @@ const Moringa = () => {
       </header>
 
       {/* HERO */}
-      <section className="relative py-12 md:py-16 px-4 md:px-6 bg-foreground overflow-hidden">
+      <section className="relative py-8 md:py-10 px-4 md:px-6 bg-foreground overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-foreground via-foreground to-foreground/90" />
         <div className="absolute -top-32 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-primary/8 rounded-full blur-3xl" />
